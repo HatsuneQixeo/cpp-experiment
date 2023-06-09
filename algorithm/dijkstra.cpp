@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <queue>
 #include <vector>
 #include <limits>
@@ -119,9 +120,9 @@ int main()
 		vector<int>	path = graph.reconstructPath(start, target, prev);
 
 		// Print the path
-		cout << "Path to target " << target << ": ";
+		cout << "Path to target " << target << ":";
 		for (int node : path)
-			cout << node << " ";
+			cout << ' ' << node;
 		cout << endl;
 	}
 }
