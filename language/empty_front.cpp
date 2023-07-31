@@ -71,6 +71,13 @@ int	main(int argc, char **argv)
 
 		vec.push_back(1);
 		vec.clear();
+		std::cout << "data after clear: 0x" << std::hex << vec.data() << std::dec << std::endl;
+		/*
+			There's some inaccuracy because this is pass by value,
+			the container that went through test is technically constructed by copy constructor.
+
+			Though I can see heap use after free already if this were to went through the way I expect it to.
+		*/
 		emptyFrontBackCall(vec);
 	}
 }
