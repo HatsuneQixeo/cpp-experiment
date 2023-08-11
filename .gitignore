@@ -2,3 +2,4 @@ test
 *.o
 .vscode
 a.out
+.DS_Store
