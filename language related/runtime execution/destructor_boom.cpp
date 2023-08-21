@@ -6,9 +6,10 @@
 
 	Explicitly calling the destructor just leads to a lot of problems in general,
 	since the object will be in put into invalid state (whatever that means),
-	undefined behaviour,
-	crashes,
+	double free,
 	forfeiting virtual properties,
+	crashes,
+	undefined behaviour,
 	just to name a few.
 */
 int	main(int argc, char **argv)
