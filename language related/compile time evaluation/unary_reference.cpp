@@ -1,5 +1,6 @@
 #include <iostream>
 
+/* c++ is not cursed at all :) */
 int	main(void)
 {
 	int		i = 0;
